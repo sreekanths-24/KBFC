@@ -454,7 +454,7 @@ Generic layout (demo looks)
   padding:45px 0 20px;
   font-size:15px;
   line-height:24px;
-  color:black;
+  color:white;
 }
 .site-footer hr
 {
@@ -475,7 +475,7 @@ Generic layout (demo looks)
 }
 .site-footer a
 {
-  color:black;
+  color:white;
 }
 .site-footer a:hover
 {
@@ -493,7 +493,7 @@ Generic layout (demo looks)
 }
 .footer-links a
 {
-  color:black
+  color:white
 }
 .footer-links a:active,.footer-links a:focus,.footer-links a:hover
 {
