@@ -1,0 +1,775 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="styles/styles.css" />
+
+    <!-- == OSWALD font from google font for headings == -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Oswald&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- == POPPINS font for everything else == -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins&display=swap"
+      rel="stylesheet"
+    />
+
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN"
+      crossorigin="anonymous"
+    />
+
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+      integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+
+    <link rel="shortcut icon" href="https://keralablastersfc.in/wp-content/uploads/2022/07/logo-01-150x150.png" type="image/x-icon" />
+
+    <title>Kerala Blasters</title>
+  </head>
+  <body>
+    <nav style="z-index: 10; position: fixed; top: 0; width: 100%;">
+        <div class="p-3 text-white" style="background-color: #1e6eeb">
+            <div class="flexMain">
+              <div class="flex1"></div>
+              <div class="flex2 text-center">
+                <div><strong>WELCOME!!</strong></div>
+              </div>
+              <div class="flex1"></div>
+            </div>
+          </div>
+          <div id="menuHolder">
+            <div
+              role="navigation"
+              class="sticky-top border-bottom border-top"
+              id="mainNavigation"
+            >
+              <div class="flexMain">
+                <div class="flex2">
+                  <button
+                    class="whiteLink siteLink"
+                    style="border-right: 1px solid #eaeaea"
+                    onclick="menuToggle()"
+                  >
+                    <i class="fas fa-bars me-2"></i> MENU
+                  </button>
+                </div>
+                <div class="flex3 text-center" id="siteBrand">
+                  Kerala Blasters Football Club
+                </div>
+      
+                <div class="flex2 text-end d-block d-md-none">
+                  <button class="whiteLink siteLink" style="visibility: hidden">
+                    <i class="fas fa-search"></i>
+                  </button>
+                </div>
+      
+                <div class="flex2 text-end d-none d-md-block">
+                  <button class="whiteLink siteLink" style="visibility: hidden">
+                    REGISTER
+                  </button>
+                  <button class="blackLink siteLink" style="visibility: hidden">
+                    Login
+                  </button>
+                </div>
+              </div>
+            </div>
+      
+            <div id="menuDrawer">
+              <div class="p-4 border-bottom">
+                <div class="row">
+                  <div class="col" style="visibility: hidden">
+                    <select class="noStyle">
+                      <option value="english">English</option>
+                      <option value="spanish">Spanish</option>
+                      <option value="french">French</option>
+                      <option value="italian">Italian</option>
+                      <option value="hebrew">Hebrew</option>
+                    </select>
+                  </div>
+                  <div class="col text-end">
+                    <i class="fas fa-times" role="btn" onclick="menuToggle()"></i>
+                  </div>
+                </div>
+              </div>
+              <div>
+                <a href="#teams" class="nav-menu-item"
+                  ><i class="fa-solid fa-people-group me-3"></i>Team</a
+                >
+                <a href="#coaches" class="nav-menu-item"
+                  ><i class="fa-solid fa-futbol me-3"></i></i>Coaching Staff</a
+                >
+                <a href="#history" class="nav-menu-item"
+                  ><i class="fa-solid fa-clock-rotate-left me-3"></i>Hisrory Of The Team</a
+                >
+                <a href="#" class="nav-menu-item"
+                  ><i class="fas fa-wrench me-3"></i>Services</a
+                >
+                <a href="#" class="nav-menu-item"
+                  ><i class="fas fa-dollar-sign me-3"></i>Pricing</a
+                >
+                <a href="#" class="nav-menu-item"
+                  ><i class="fas fa-file-alt me-3"></i>Blog</a
+                >
+                <a href="#" class="nav-menu-item"
+                  ><i class="fas fa-building me-3"></i>About Us</a
+                >
+              </div>
+            </div>
+          </div>
+          
+    </nav>
+    <div style="height: 8em;"></div>
+    <main>
+      <section
+      style="
+        min-height: 80vh;
+        background-image: url(https://keralablastersfc.in/wp-content/uploads/2023/02/house-of-kbfc-final.png);
+        background-position: right;
+        background-repeat: no-repeat;
+        background-size: cover;
+      "
+      >
+
+      </section>
+      <section id="teams" style="background-color: #f2dd20;"> 
+        <br>
+        <h1 class="display-5 text-center" style="font-weight: bold">
+          MEET THE FIRST TEAM
+        </h1>
+        <ul>
+          <li>
+            <div
+              class="details"
+              style="
+                background-image: url(https://keralablastersfc.in/wp-content/uploads/2023/09/Peprah-S10.png);
+                background-position: center;
+                background-size: contain;
+              "
+            >
+                  <h2 style="font-size: 1rem;">
+                KWAME PEPRAH <small style="font-size: 0.8rem">Forward</small>
+              </h2>
+            </div>
+          </li>
+          <li>
+            <div
+              class="details"
+              style="
+                background-image: url(https://keralablastersfc.in/wp-content/uploads/2023/09/Dimitrios.png);
+                background-position: center;
+                background-size: contain;
+              "
+            >
+                  <h2 style="font-size: 1rem;">
+                DIMITRIOS DIAMANTAKOS
+                <small style="font-size: 0.8rem">Forward</small>
+              </h2>
+            </div>
+          </li>
+          <li>
+            <div
+              class="details"
+              style="
+                background-image: url(https://keralablastersfc.in/wp-content/uploads/2023/09/Daisuke.png);
+                background-position: center;
+                background-size: contain;
+              "
+            >
+                  <h2 style="font-size: 1rem;">
+                DAISUKE SAKAI <small style="font-size: 0.8rem">Forward</small>
+              </h2>
+            </div>
+          </li>
+          <li>
+            <div
+              class="details"
+              style="
+                background-image: url(https://keralablastersfc.in/wp-content/uploads/2023/09/Azhar-S10.png);
+                background-position: center;
+                background-size: contain;
+              "
+            >
+                  <h2 style="font-size: 1rem;">
+                MOHAMMED AZHAR <small style="font-size: 0.8rem">Midfield</small>
+              </h2>
+            </div>
+          </li>
+
+          <li>
+            <div
+              class="details"
+              style="
+                background-image: url(https://keralablastersfc.in/wp-content/uploads/2023/09/Danish-S10.png);
+                background-position: center;
+                background-size: contain;
+              "
+            >
+                  <h2 style="font-size: 1rem;">
+                DANISH FAROOQ <small style="font-size: 0.8rem">Midfield</small>
+              </h2>
+            </div>
+          </li>
+
+          <li>
+            <div
+              class="details"
+              style="
+                background-image: url(https://keralablastersfc.in/wp-content/uploads/2023/09/Yoihenba-S10.png);
+                background-position: center;
+                background-size: contain;
+              "
+            >
+                  <h2 style="font-size: 1rem;">
+                YOIHENBA MEITEI
+                <small style="font-size: 0.8rem">Midfield</small>
+              </h2>
+            </div>
+          </li>
+
+          <li>
+            <div
+              class="details"
+              style="
+                background-image: url(https://keralablastersfc.in/wp-content/uploads/2023/09/Freddy-S10.png);
+                background-position: center;
+                background-size: contain;
+              "
+            >
+                  <h2 style="font-size: 1rem;">
+                FREDDY LALLAWMAWMA
+                <small style="font-size: 0.8rem">Midfield</small>
+              </h2>
+            </div>
+          </li>
+
+          <li>
+            <div
+              class="details"
+              style="
+                background-image: url(https://keralablastersfc.in/wp-content/uploads/2022/08/Aimen-S10.png);
+                background-position: center;
+                background-size: contain;
+              "
+            >
+                  <h2 style="font-size: 1rem;">
+                MOHAMMED AIMEN <br /><small style="font-size: 0.8rem"
+                  > Midfield</small
+                >
+              </h2>
+            </div>
+          </li>
+
+          <li>
+            <div
+              class="details"
+              style="
+                background-image: url(https://keralablastersfc.in/wp-content/uploads/2023/09/Ishan-S10.png);
+                background-position: center;
+                background-size: contain;
+              "
+            >
+                  <h2 style="font-size: 1rem;">
+                ISHAN PANDITA <br /><small style="font-size: 0.8rem"
+                  > Forward</small
+                >
+              </h2>
+            </div>
+          </li>
+          <li>
+            <div
+              class="details"
+              style="
+                background-image: url(https://keralablastersfc.in/wp-content/uploads/2022/10/Bidya-S10.png);
+                background-position: center;
+                background-size: contain;
+              "
+            >
+                  <h2 style="font-size: 1rem;">
+                BIDYASHAGAR SINGH <small style="font-size: 0.8rem"
+                  > Forward</small
+                >
+              </h2>
+            </div>
+          </li>
+          <li>
+            <div
+              class="details"
+              style="
+                background-image: url(https://keralablastersfc.in/wp-content/uploads/2022/10/Vibin-S10.png);
+                background-position: center;
+                background-size: contain;
+              "
+            >
+                  <h2 style="font-size: 1rem;">
+                VIBIN MOHANAN <small style="font-size: 0.8rem"
+                  > Midfield</small
+                >
+              </h2>
+            </div>
+          </li>
+          <li>
+            <div
+              class="details"
+              style="
+                background-image: url(https://keralablastersfc.in/wp-content/uploads/2022/08/Saurav-S10.png);
+                background-position: center;
+                background-size: contain;
+              "
+            >
+                  <h2 style="font-size: 1rem;">
+                SAURAV MANDAL<small style="font-size: 0.8rem"
+                  > Forward</small
+                >
+              </h2>
+            </div>
+          </li>
+          <li>
+            <div
+              class="details"
+              style="
+                background-image: url(https://keralablastersfc.in/wp-content/uploads/2022/08/Bryce-S10.png);
+                background-position: center;
+                background-size: contain;
+              "
+            >
+                  <h2 style="font-size: 1rem;">
+                BRYCE MIRANDA<small style="font-size: 0.8rem"
+                  > Forward</small
+                >
+              </h2>
+            </div>
+          </li>
+          <li>
+            <div
+              class="details"
+              style="
+                background-image: url(https://keralablastersfc.in/wp-content/uploads/2022/08/Nihal-S10.png);
+                background-position: center;
+                background-size: contain;
+              "
+            >
+                  <h2 style="font-size: 1rem;">
+                NIHAL SUDHEESH<small style="font-size: 0.8rem"
+                  > Forward</small
+                >
+              </h2>
+            </div>
+          </li>
+          <li>
+            <div
+              class="details"
+              style="
+                background-image: url(https://keralablastersfc.in/wp-content/uploads/2022/08/Sandeep-S10.png);
+                background-position: center;
+                background-size: contain;
+              "
+            >
+                  <h2 style="font-size: 1rem;">
+                SANDEEP SINGH<small style="font-size: 0.8rem"
+                  > Defence</small
+                >
+              </h2>
+            </div>
+          </li>
+          <li>
+            <div
+              class="details"
+              style="
+                background-image: url(https://keralablastersfc.in/wp-content/uploads/2022/08/Jeaskson-S10.png);
+                background-position: center;
+                background-size: contain;
+              "
+            >
+                  <h2 style="font-size: 1rem;">
+                JEAKSON SINGH<small style="font-size: 0.8rem"
+                  > Midfield</small
+                >
+              </h2>
+            </div>
+          </li>
+          <li>
+            <div
+              class="details"
+              style="
+                background-image: url(https://keralablastersfc.in/wp-content/uploads/2022/08/Marko-S10.png);
+                background-position: center;
+                background-size: contain;
+              "
+            >
+                  <h2 style="font-size: 1rem;">
+                MARKO LESKOVIC<small style="font-size: 0.8rem"
+                  > Defence</small
+                >
+              </h2>
+            </div>
+          </li>
+          <li>
+            <div
+              class="details"
+              style="
+                background-image: url(https://keralablastersfc.in/wp-content/uploads/2022/08/Rahul-S10.png);
+                background-position: center;
+                background-size: contain;
+              "
+            >
+                  <h2 style="font-size: 1rem;">
+                RAHUL KP<small style="font-size: 0.8rem"
+                  > Forward</small
+                >
+              </h2>
+            </div>
+          </li>
+          <li>
+            <div
+              class="details"
+              style="
+                background-image: url(https://keralablastersfc.in/wp-content/uploads/2022/08/Luna-S10.png);
+                background-position: center;
+                background-size: contain;
+              "
+            >
+                  <h2 style="font-size: 1rem;">
+                ADRIAN LUNA (C)<small style="font-size: 0.8rem"
+                  > Midfield</small
+                >
+              </h2>
+            </div>
+          </li>
+          <li>
+            <div
+              class="details"
+              style="
+                background-image: url(https://keralablastersfc.in/wp-content/uploads/2022/08/Hormi-2.png);
+                background-position: center;
+                background-size: contain;
+              "
+            >
+                  <h2 style="font-size: 1rem;">
+                RUIVAH HORMIPAM<small style="font-size: 0.8rem"
+                  > Defence</small
+                >
+              </h2>
+            </div>
+          </li>
+          <li>
+            <div
+              class="details"
+              style="
+                background-image: url(https://keralablastersfc.in/wp-content/uploads/2023/09/Arbaz.png);
+                background-position: center;
+                background-size: contain;
+              "
+            >
+                  <h2 style="font-size: 1rem;">
+                MOHAMMED ARBAZ
+                <small style="font-size: 0.8rem">Goal Keeper</small>
+              </h2>
+            </div>
+          </li>
+
+          <li>
+            <div
+              class="details"
+              style="
+                background-image: url(https://keralablastersfc.in/wp-content/uploads/2023/09/Lara-S10.png);
+                background-position: center;
+                background-size: contain;
+              "
+            >
+                  <h2 style="font-size: 1rem;">
+                LARA SHARMA <small style="font-size: 0.8rem">Goal Keeper</small>
+              </h2>
+            </div>
+          </li>
+
+          <li>
+            <div
+              class="details"
+              style="
+                background-image: url(https://keralablastersfc.in/wp-content/uploads/2023/09/Sachin-S10.png);
+                background-position: center;
+                background-size: contain;
+              "
+            >
+                  <h2 style="font-size: 1rem;">
+                SACHIN SURESH <br /><small style="font-size: 0.8rem"
+                  >Goal Keeper</small
+                >
+              </h2>
+            </div>
+          </li>
+
+          <li>
+            <div
+              class="details"
+              style="
+                background-image: url(https://keralablastersfc.in/wp-content/uploads/2022/08/Karanjit-2.png);
+                background-position: center;
+                background-size: contain;
+              "
+            >
+                  <h2 style="font-size: 1rem;">
+                KARANJIT SINGH <br><small style="font-size: 0.8rem"
+                  > Goal Keeper</small
+                >
+              </h2>
+            </div>
+          </li>
+
+          <!-- <li>
+            <div class="details">
+              <h2>Nike Metcon 4 iD</h2>
+              <p>$150</p>
+              <p>$150</p>
+              <img
+                src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/881020/nike12a.png"
+              />
+              <img
+                src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/881020/nike12b.png"
+              />
+            </div>
+          </li> -->
+        </ul>
+      </section>
+      <div style="margin-top: -16px; min-height: 80vh; background-image: url(https://keralablastersfc.in/wp-content/uploads/2023/09/header-min-2048x1366.jpeg); background-position: center; background-repeat: no-repeat; background-size: cover;">
+
+      </div>
+
+      <section id="coaches" style="background-color: #1e6eeb;">
+        <br>
+        <h1 class="display-5 text-center text-white" style="font-weight: bold">
+            MEET THE COACHING STAFF
+        </h1>
+        <div>
+            
+            <ul>
+                <li>
+                    <div
+                    class="details"
+                    style="
+                      background-image: url(https://keralablastersfc.in/wp-content/uploads/2019/11/Ivan.webp);
+                      background-position: center;
+                      background-size: contain;
+                      background-repeat: no-repeat;
+                      "
+                  >
+                  <h2 style="font-size: 1rem;">
+                    IVAN VUKOMANOVIC <small style="font-size: 0.8rem">Head Coach</small>
+                    </h2>
+                </div>
+            </li>
+            <li>
+                <div
+                class="details"
+                style="
+                      background-image: url(https://keralablastersfc.in/wp-content/uploads/2023/09/werner.webp);
+                      background-position: center;
+                      background-size: contain;
+                      background-repeat: no-repeat;
+                      "
+                  >
+                  <h2 style="font-size: 1rem;">
+                    WERNER MARTENS <small style="font-size: 0.8rem">Fitness Coach</small>
+                    </h2>
+                </div>
+            </li>
+            <li>
+                <div
+                class="details"
+                style="
+                      background-image: url(https://keralablastersfc.in/wp-content/uploads/2023/09/Slaven.webp);
+                      background-position: center;
+                      background-size: contain;
+                      background-repeat: no-repeat;
+                      "
+                  >
+                  <h2 style="font-size: 1rem;">
+                    SLAVEN PROGOVEKI <small style="font-size: 0.8rem">Goalkeeping Coach</small>
+                    </h2>
+                </div>
+            </li>
+            <li>
+                <div
+                class="details"
+                style="
+                      background-image: url(https://keralablastersfc.in/wp-content/uploads/2023/09/purushothaman.webp);
+                      background-position: center;
+                      background-size: contain;
+                      background-repeat: no-repeat;
+                      "
+                  >
+                  <h2 style="font-size: 1rem;">
+                      T. G. PURUSHOTHAMAN <small style="font-size: 0.8rem">Assistant Coach</small>
+                    </h2>
+                </div>
+            </li>
+            <li>
+                <div
+                class="details"
+                style="
+                      background-image: url(https://keralablastersfc.in/wp-content/uploads/2023/09/Frank.webp);
+                      background-position: center;
+                      background-size: contain;
+                      background-repeat: no-repeat;
+                      "
+                  >
+                  <h2 style="font-size: 1rem;">
+                    FRANK DAUWEN <small style="font-size: 0.8rem">Assistant Coach</small>
+                    </h2>
+                </div>
+            </li>
+        </ul>
+    </div>
+
+    
+</section>
+<div id="specjhseg" style=" background-color: #1e6eeb; margin-top: -16px;"></div>
+<div class="div2container"  id="history" >
+  <div class="divider2"></div>
+
+</div>
+<div style="height: 8em; background-color: white; margin-top: -16px;"></div>
+<section >
+  <h1 class="display-5 text-center" style="font-weight: bold">
+    TEAM HISTORY
+  </h1>
+  
+    <section class="articles py-5">
+        <article>
+          <div class="article-wrapper">
+            <figure>
+                <img src="https://static.toiimg.com/thumb/msid-96690729,width-1280,height-720,resizemode-4/96690729.jpg " alt="" />
+              </figure>
+            <div class="article-body">
+              <h2>Formation</h2>
+              <p>
+                In early 2014, the All India Football Federation announced the sale of eight franchises for the Indian Super League (ISL). On 13 April 2014, Sachin Tendulkar and Prasad V. Potluri won the rights to the Kochi franchise. The club was named Kerala Blasters FC on 27 May 2014. The first player signed was Mehtab Hossain, followed by seven other Indian players. David James became the head coach and marquee player on 13 August 2014. The club also selected seven foreign players in an international draft on 21 August 2014. These players included Michael Chopra, Iain Hume, Pulga, Erwin Spitzner, Pedro Gusmão, Cedric Hengbart, and Raphaël Romey, and the club signed additional foreign players.
+              </p>
+              
+            </div>
+          </div>
+        </article>
+        <article>
+      
+          <div class="article-wrapper">
+            <figure>
+              <img src="https://assets-webp.khelnow.com/news/uploads/2022/04/Kerala-Blasters-18.jpg.webp" alt="" />
+            </figure>
+            <div class="article-body">
+              <h2>Inaugural season</h2>
+              <p>
+                Kerala Blasters played their first game on October 13, 2014, losing 1-0 to NorthEast United, with Koke scoring in the 45th minute. Iain Hume scored their first-ever goal during the second match against Chennaiyin, but they lost 2-1. Their first win came in the fourth game against Pune City, with goals from Chinadorai Sabeeth and Penn Orji, resulting in a 2-1 victory. They hosted their first home match on November 6, 2014, beating Goa 1-0 with a goal by Milagres Gonsalves. They qualified for the playoffs on December 9, 2014, with a 1-0 victory over Pune City.
+
+In the playoffs, they won the first semi-final leg against Chennaiyin 3-0 with goals from Ishfaq Ahmed, Iain Hume, and Sushanth Mathew, and despite a scare in the second leg, they secured their spot in the final by winning 4-3 in extra time, with a decisive goal from Stephen Pearson in the 117th minute.
+              </p>
+              
+            </div>
+          </div>
+        </article>
+        <article>
+      
+          <div class="article-wrapper">
+            <figure>
+              <img src="https://images.cnbctv18.com/wp-content/uploads/2023/09/kerala-blasters-players-768x432.jpg" alt="" />
+            </figure>
+            <div class="article-body">
+              <h2>2015 to 2023 seasons</h2>
+              <p>
+                2015 Season: New coach and foreign players, finishing last in the league. <br><br>
+2016 Season: Improved performance, finishing second and reaching the finals. <br><br>
+2017–18 Season: Struggled, finishing sixth in the league. <br><br>
+2018–19 Season: Disappointing season, coach David James sacked. <br><br>
+2019–20 Season: Finished seventh with injury concerns. <br><br>
+2020–21 Season: Finished in tenth place. <br><br>
+2021–22 Season: Strong season, finished on top but lost in the final. <br><br>
+2022–23 Season: Successful league stage but eliminated dramatically in the playoffs. <br><br>
+              </p>
+              
+            </div>
+          </div>
+        </article>
+      </section>
+</section>
+
+<section
+  style="
+  min-height: 100vh;
+  background-image: url(https://keralablastersfc.in/wp-content/uploads/2022/08/General-Header-1.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;"
+></section>
+</main>
+  <!-- Site footer -->
+  <footer class="site-footer">
+    <div class="container">
+      <div class="row">
+        <div class="col-sm-12 col-md-6">
+          <h6>About</h6>
+          <p class="text-justify">Formed on 27th May 2014, Kerala Blasters FC is one of the eleven teams that is a part of the Indian Super League (ISL) since its inception, with its Home ground at Jawaharlal Nehru Stadium, Kaloor, Kochi.</p>
+        </div>
+        <div class="col-xs-6 col-md-3">
+          <h6>Quick Links</h6>
+          <div class="footer-links">
+            <span><a href="#">About Us</a></span><br>
+            <span><a href="#">Contact Us</a></span><br>
+            <span><a href="#">Contribute</a></span><br>
+            <span><a href="#">Privacy Policy</a></span><br>
+            <span><a href="#">Sitemap</a></span><br>
+          </div>
+        </div>
+
+        <div class="col-xs-6 col-md-3">
+          <h6>About Me</h6>
+          <div class="footer-links">
+            <span><a href="https://iamsreekanths.netlify.app/">Personal Website</a></span><br>
+            <span><a href="https://github.com/sreekanths-24/">Github</a></span><br>
+            <span><a href="https://www.linkedin.com/in/sreekanth-s-663418232">linkedin</a></span><br>
+            <span><a href="https://www.twitter.com/_Sreekanth_S_/">Twitter</a></span><br>
+          </div>
+        </div>
+
+      </div>
+      <hr>
+    </div>
+    <div class="container">
+      <div class="row">
+        <div class="col-md-8 col-sm-6 col-xs-12">
+          <p class="copyright-text">Copyright &copy; 2023 All Rights Reserved by 
+       <a href="https://iamsreekanths.netlify.app/">Sreekanth S</a>.
+          </p>
+        </div>
+
+        <div class="col-md-4 col-sm-6 col-xs-12">
+          <div class="social-icons">
+            <span><a class="facebook" href="#"><i class="fa-brands fa-facebook"></i></a></span>
+            <span><a class="twitter" href="#"><i class="fa-brands fa-twitter"></i></a></span>
+            <span><a class="linkedin" href="#"><i class="fa-brands fa-linkedin"></i></a></span> 
+          </div>
+        </div>
+      </div>
+    </div>
+</footer>
+<script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+      crossorigin="anonymous"
+      ></script>
+      
+      <script src="scripts/scripts.js"></script>
+    </body>
+</html>
