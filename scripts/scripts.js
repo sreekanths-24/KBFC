@@ -1,3 +1,4 @@
+var mainmenuholder = document.getElementById('mainmenuholder');
 var menuHolder = document.getElementById('menuHolder');
 var siteBrand = document.getElementById('siteBrand');
 var prevScrollPos = window.pageYOffset;
@@ -21,12 +22,12 @@ function updateNavbarVisibility() {
   var currentScrollPos = window.pageYOffset;
   if (prevScrollPos > currentScrollPos) {
     // Scrolling up, show the navbar
-    menuHolder.classList.remove("navbar-hidden");
+    mainmenuholder.classList.remove("navbar-hidden");
   } else {
     // Scrolling down, hide the navbar with a delay
     clearTimeout(scrollTimeout);
     scrollTimeout = setTimeout(function () {
-      menuHolder.classList.add("navbar-hidden");
+      mainmenuholder.classList.add("navbar-hidden");
     }, 100); // Adjust the delay as needed
   }
   prevScrollPos = currentScrollPos;
@@ -48,7 +49,7 @@ navMenuItems.forEach(function (item) {
 // Event listener for clicking outside the navbar
 document.addEventListener('click', function (event) {
   if (
-    !menuHolder.contains(event.target) &&
+    !mainmenuholder.contains(event.target) &&
     !event.target.classList.contains('siteLink')
   ) {
     closeMenu();
