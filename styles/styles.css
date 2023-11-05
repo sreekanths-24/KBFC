@@ -99,6 +99,23 @@ select.noStyle {
   outline:none
 }
 
+.navbar-hidden {
+  transform: translateY(-100%);
+  transition: transform 0.3s ease; /* Add a smooth transition */
+}
+/*==================animations section======================*/
+
+.hiddener{
+  opacity: 0;
+  transform: translateY(20%);
+  transition: transform 1s ease, opacity 1s ease;
+  
+}
+
+.shower{
+  opacity: 1;
+  transform: translateY(0);
+}
 
 /* team csss */
 
