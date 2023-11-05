@@ -664,3 +664,12 @@ Generic layout (demo looks)
     max-width: 100%;
   }
 }
+
+/*==================parallax section======================*/
+
+@media screen and (max-width: 768px) {
+  .palalala{
+    display: none;
+  }
+  
+}
