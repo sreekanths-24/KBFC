@@ -673,3 +673,43 @@ Generic layout (demo looks)
   }
   
 }
+
+/* Style the header: fixed position (always stay at the top) */
+.header-jsj {
+  position: fixed;
+  top: 0;
+  z-index: 10;
+  width: 100%;
+  background-color: #f1f1f1;
+}
+
+/* The progress container (grey background) */
+.progress-container {
+  width: 100%;
+  height: 8px;
+  background: #ccc;
+}
+
+/* The progress bar (scroll indicator) */
+.progress-bar {
+  height: 8px;
+  background: #04AA6D;
+  width: 0%;
+}
+
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #1e6eeb;
+}
+
+::-webkit-scrollbar-track {
+  background-color: #f2dd20;
+}
+
+::selection {
+  background-color: #f2dd20;
+  color: #1e6eeb;
+}
