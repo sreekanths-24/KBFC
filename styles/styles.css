@@ -5,13 +5,9 @@
     font-family: 'Poppins', sans-serif;
 
 }
-
-
-
 h1,h2,h3{
     font-family: 'Oswald', sans-serif;
 }
-
 
 .flexMain {
   display:flex;
@@ -145,7 +141,7 @@ li{
   border-radius: 2vw;
   box-shadow: inset 0px 0px 0px 7vw #FCF8F4;
   box-sizing: border-box;
-  webkit-filter: drop-shadow(2px 6px 3px rgba(0, 0, 0, 0.4));
+  /* webkit-filter: drop-shadow(2px 6px 3px rgba(0, 0, 0, 0.4)); */
   filter: drop-shadow(2px 6px 3px rgba(0, 0, 0, 0.4));
   transform: rotate(0deg) translate(0, 0);
   transition-property: transform;
@@ -713,3 +709,33 @@ Generic layout (demo looks)
   background-color: #f2dd20;
   color: #1e6eeb;
 }
+.readmorediv{
+  text-align: center;
+  padding: 2em;
+}
+.readmorebtn{
+  background-color: #f2dd20;
+  color: #1e6eeb;
+  border: none;
+  padding: 10px 20px;
+  font-size: 2rem;
+  cursor: pointer;
+  border-radius: 5px;
+  margin: 10px;
+  transition: all 0.3s ease-in-out;
+  text-decoration: none;
+  margin: 0 auto;
+  font-family: 'Oswald', sans-serif;
+}
+
+.readmorebtn:hover{
+  background-color: #1e6eeb;
+  color: #f2dd20;
+  transform: scale(1.1);
+}
+
+.readmorebtn span{
+  font-family: 'poppins', sans-serif;
+  color: black;
+}
+

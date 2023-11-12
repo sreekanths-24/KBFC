@@ -1,0 +1,327 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="styles/style2.css" />
+
+    <!-- == OSWALD font from google font for headings == -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Oswald&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- == POPPINS font for everything else == -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins&display=swap"
+      rel="stylesheet"
+    />
+
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN"
+      crossorigin="anonymous"
+    />
+
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+      integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+
+    <link
+      rel="shortcut icon"
+      href="https://keralablastersfc.in/wp-content/uploads/2022/07/logo-01-150x150.png"
+      type="image/x-icon"
+    />
+    <!-- == rellaxjs == -->
+    <script src="https://cdn.jsdelivr.net/gh/dixonandmoe/rellax@master/rellax.min.js"></script>
+
+    <title>Kerala Blasters | History</title>
+</head>
+<body>
+    <nav
+      style="z-index: 10; position: fixed; top: 0; width: 100%"
+      id="mainmenuholder"
+    >
+      <div class="p-3 text-white" style="background-color: #1e6eeb">
+        <div class="flexMain">
+          <div class="flex1"></div>
+          <div class="flex2 text-center">
+            <div>
+              <img
+                src="https://upload.wikimedia.org/wikipedia/en/thumb/e/e7/Kerala_Blasters_FC_logo.svg/640px-Kerala_Blasters_FC_logo.svg.png"
+                alt=""
+                width="20px"
+              /><strong>WELCOME!!</strong>
+            </div>
+          </div>
+          <div class="flex1"></div>
+        </div>
+      </div>
+      <div id="menuHolder">
+        <div
+          role="navigation"
+          class="sticky-top border-bottom border-top"
+          id="mainNavigation"
+        >
+          <div class="flexMain">
+            <div class="flex2">
+              <button
+                class="whiteLink siteLink"
+                style="border-right: 1px solid #eaeaea"
+                onclick="menuToggle()"
+              >
+                <i class="fas fa-bars me-2"></i> MENU
+              </button>
+            </div>
+            <div class="flex3 text-center" id="siteBrand">
+              Kerala Blasters Football Club
+            </div>
+
+            <div class="flex2 text-end d-block d-md-none">
+              <button class="whiteLink siteLink" style="visibility: hidden">
+                <i class="fas fa-search"></i>
+              </button>
+            </div>
+
+            <div class="flex2 text-end d-none d-md-block">
+              <button class="whiteLink siteLink" style="visibility: hidden">
+                REGISTER
+              </button>
+              <button class="blackLink siteLink" style="visibility: hidden">
+                Login
+              </button>
+            </div>
+          </div>
+        </div>
+        <!-- <div class="header-jsj">
+          <div class="progress-container">
+            <div class="progress-bar" id="myBar"></div>
+          </div>
+        </div> -->
+        <div id="menuDrawer">
+          <div class="p-4 border-bottom">
+            <div class="row">
+              <div class="col" style="visibility: hidden">
+                <select class="noStyle">
+                  <option value="english">English</option>
+                  <option value="spanish">Spanish</option>
+                  <option value="french">French</option>
+                  <option value="italian">Italian</option>
+                  <option value="hebrew">Hebrew</option>
+                </select>
+              </div>
+              <div class="col text-end">
+                <i class="fas fa-times" role="btn" onclick="menuToggle()"></i>
+              </div>
+            </div>
+          </div>
+          <div>
+            <a href="#formation" class="nav-menu-item"
+              ><i class="fa-solid fa-people-group me-3"></i> Formation</a
+            >
+            <a href="#inaugral" class="nav-menu-item"
+              ><i class="fa-solid fa-people-group me-3"></i>Inaugural season</a
+            >
+            <a href="#t2015" class="nav-menu-item"
+              ><i class="fa-solid fa-people-group me-3"></i>2015 season</a
+            >
+            <a href="#t2016" class="nav-menu-item"
+              ><i class="fa-solid fa-people-group me-3"></i>2016 season</a
+            >
+            <a href="#t2017" class="nav-menu-item"
+              ><i class="fa-solid fa-people-group me-3"></i>2017–18 season</a
+            >
+            <a href="#t2018" class="nav-menu-item"
+              ><i class="fa-solid fa-people-group me-3"></i>2018–19 season</a
+            >
+            <a href="#t2019" class="nav-menu-item"
+              ><i class="fa-solid fa-people-group me-3"></i>2019–20 season</a
+            >
+            <a href="#t2020" class="nav-menu-item"
+              ><i class="fa-solid fa-people-group me-3"></i>2020–21 season</a
+            >
+            <a href="#t2021" class="nav-menu-item"
+              ><i class="fa-solid fa-people-group me-3"></i>2021–22 season</a
+            >
+            <a href="#t2022" class="nav-menu-item"
+              ><i class="fa-solid fa-people-group me-3"></i>2022–23 season</a
+            >
+          </div>
+        </div>
+      </div>
+      <img src="https://upload.wikimedia.org/wikipedia/en/thumb/e/e7/Kerala_Blasters_FC_logo.svg/640px-Kerala_Blasters_FC_logo.svg.png" style="width: 90px; float: inline-end;" class="palalala">
+    </nav>
+
+    <div style="height: 8em; background-color: #f2dd20"></div>
+    
+    <main>
+        <div class="timeline-dfnb">
+            <div class="hiddener container-dfnb left-dfnb">
+              <div class="content-dfnb">
+                <h2 id="formation">Formation</h2>
+                <p>
+                    In early 2014, the All India Football Federation—the governing body of association football in India, announced they would accept bids for the ownership of eight franchises from selected cities for the inaugural season of the Indian Super League (ISL).On 13 April 2014, it was announced the rights to the Kochi franchise had been won by former India national cricket team captain Sachin Tendulkar and entrepreneur Prasad V. Potluri. On 27 May 2014, the club's official name, Kerala Blasters FC, was announced.
+                </p>
+              </div>
+            </div>
+            <div class="hiddener container-dfnb right-dfnb">
+              <div class="content-dfnb">
+                <h2 id="inaugral">Inaugural season</h2>
+                <p>
+                    Kerala Blasters played their first game on 13 October 2014 against NorthEast United at the Indira Gandhi Athletic Stadium; they lost the game 1–0 after Koke scored in the 45th minute. On 21 October, the club's first-ever goal was scored by Iain Hume during their second match, which was against Chennaiyin. Despite Hume's goal, the Blasters lost the game 2–1.[10] The club's first win came in their fourth game, which was played against Pune City; Chinadorai Sabeeth and Penn Orji scored the club's goals, leading to a 2–1 victory. After playing their first five matches away from home, Kerala Blasters hosted their first home match on 6 November 2014 against Goa. A goal by Milagres Gonsalves led to a 1–0 victory in front of 49,517 fans at the Jawaharlal Nehru Stadium. The Blasters qualified for the playoffs on 9 December 2014 with a 1–0 victory over Pune City.
+
+                </p>
+              </div>
+            </div>
+            <div class="hiddener container-dfnb left-dfnb">
+              <div class="content-dfnb">
+                <h2 id="t2015">2015 season</h2>
+                <p>After the 2014 season, the club announced David James would not return to the club as the head coach and marquee player, and on 12 May 2015, it was confirmed that former England Under-20 head coach Peter Taylor would take over the manager role at the club. The club signed a new roster of foreign players, which includes Carlos Marchena as the marquee signing.</p>
+              </div>
+            </div>
+            <div class="hiddener container-dfnb right-dfnb">
+              <div class="content-dfnb">
+                <h2 id="t2016">2016 season</h2>
+                <p>In an effort to rebuild the team after failing to qualify for the semi-finals in the previous season, the Blasters announced the signing of Steve Coppell as their head coach on 21 June 2016. A week later, the club announced the signing of Northern Ireland international Aaron Hughes as their marquee player for the season.</p>
+              </div>
+            </div>
+            <div class="hiddener container-dfnb left-dfnb">
+              <div class="content-dfnb">
+                <h2 id="t2017">2017–18 season</h2>
+                <p>After losing in the previous season's finals, Steve Coppell rejected a new contract extension so the club appointed former Manchester United assistant manager René Meulensteen as their new manager. Blasters released all of their foreign players and signed some more, including former Manchester United players Dimitar Berbatov and Wes Brown. Sandesh Jhingan was appointed as the captain and the club re-signed their leading goalscorer from the first season Iain Hume.The Blasters won only one of their first eight games that season, leading to the sacking of Meulensteen. Fan-favourite manager David James returned to the squad as caretaker.The Blasters won five of the remaining ten matches and finished sixth in the 2017-18 Indian Super League season. They were eliminated in the first round of the Super Cup.</p>
+              </div>
+            </div>
+            <div class="hiddener container-dfnb right-dfnb">
+              <div class="content-dfnb">
+                <h2 id="t2018">2018–19 season</h2>
+                <p>Having failed to qualify for the previous season's semi-finals, the Blasters signed a three-year deal with manager David James. With a new roster, Kerala Blasters had one of their worst seasons, winning only one and drawing six of their twelve fixtures, leading to the sacking of James. This season witnessed the club's rising star Sahal Abdul Samad's emergence as Blasters' mainstay in midfield. After the international mid-season break, the Blasters appointed Nelo Vingada as their new manager for the remaining six matches. Of the remaining games, the team had only one win and three draws and finished ninth in the league. They were eliminated from the Super Cup in the tournament's qualifying round.</p>
+              </div>
+            </div>
+            <div class="hiddener container-dfnb left-dfnb">
+              <div class="content-dfnb">
+                <h2 id="t2019">2019–20 season</h2>
+                <p>After a disappointing season, the Blasters appointed Eelco Schattorie as their new manager, releasing all foreign players. The new roster included Raphaël Messi Bouli and Bartholomew Ogbeche as forwards. Despite early success against ATK, injuries, including Sandesh Jhingan's ACL injury and others, plagued the team throughout the season. The Blasters finished seventh in the table.</p>
+              </div>
+            </div>
+            <div class="hiddener container-dfnb right-dfnb">
+              <div class="content-dfnb">
+                <h2 id="t2020">2020–21 season</h2>
+                <p>From the 2020–21 season onwards, the Blasters revamped their strategy by appointing Karolis Skinkys as sporting director and Kibu Vicuña as manager. They focused on nurturing young Indian talent, extending contracts for Sahal and Rahul KP, and signing Nishu Kumar. Due to the COVID-19 pandemic, the season was held in Goa behind closed doors. Captain Sergio Cidoncha's injury setback, seven games to secure their first win, defensive struggles, and a 10th-place finish marked a challenging season. After a 4–0 loss against Hyderabad FC, Kibu Vicuna and the management mutually agreed to part ways, with Ishfaq Ahmed taking over as interim head coach for the remaining two games.</p>
+              </div>
+            </div>
+            <div class="hiddener container-dfnb left-dfnb">
+              <div class="content-dfnb">
+                <h2 id="t2021">2021–22 season</h2>
+                <p>After a disappointing season, Ivan Vukomanović took over as head coach in June 2021. The Blasters, participating in the Durand Cup for the first time, were knocked out in the league stage. They started the 2021–22 ISL season with a 4–2 loss to ATK Mohun Bagan but secured their first victory in 11 months against Odisha on December 5. Following an unbeaten streak of 10 games, they qualified for the playoffs for the first time since 2016. The regular season saw them break various club records, reaching the ISL finals for the third time. Unfortunately, they lost to Hyderabad in a penalty shootout, marking their third defeat in an ISL final.</p>
+              </div>
+            </div>
+            <div class="hiddener container-dfnb right-dfnb">
+              <div class="content-dfnb">
+                <h2 id="t2022">2022–23 season</h2>
+                <p>In April 2022, Kerala Blasters extended head coach Ivan Vukomanović's contract to 2025, a historic move for the club. Despite pre-season disruptions, the team reached the quarter-finals of the 2022 Durand Cup. Retaining only Marko Lešković and Adrián Luna, they started the ISL season impressively, winning the opening match against East Bengal FC. A controversial match against Bengaluru FC in the playoffs, marked by a disputed goal and walk-off, led to a series of disciplinary actions. The AIFF rejected Blasters' appeal, imposing fines and bans. The club also participated in the 2023 Indian Super Cup, winning the first group stage match but failing to advance after a draw with Bengaluru FC. This season ended without silverware for Kerala Blasters.</p>
+              </div>
+            </div>
+          </div>
+          
+    </main>
+<footer class="site-footer">
+      <div class="container">
+        <div class="row">
+          <div class="col-sm-12 col-md-6">
+            <h6>About</h6>
+            <p class="text-justify" style="text-align: justify">
+              Formed on 27th May 2014, Kerala Blasters FC is one of the eleven
+              teams that is a part of the Indian Super League (ISL) since its
+              inception, with its Home ground at Jawaharlal Nehru Stadium,
+              Kaloor, Kochi.
+            </p>
+          </div>
+          <div class="col-xs-6 col-md-3">
+            <h6>Quick Links</h6>
+            <div class="footer-links">
+              <span><a href="#abouttheteam">About The Team</a></span
+              ><br />
+              <span><a href="#teams">Team Members</a></span
+              ><br />
+              <span><a href="#coaches">Coaching Staff</a></span
+              ><br />
+              <span><a href="#history">Hisrory Of The Team</a></span
+              ><br />
+              <span><a href="#photogallery">Photo Gallery</a></span
+              ><br />
+              <span><a href="#news">Latest News</a></span
+              ><br />
+            </div>
+          </div>
+
+          <div class="col-xs-6 col-md-3">
+            <h6>About Me</h6>
+            <div class="footer-links">
+              <span
+                ><a href="https://iamsreekanths.netlify.app/"
+                  >Personal Website</a
+                ></span
+              ><br />
+              <span><a href="https://github.com/sreekanths-24/">Github</a></span
+              ><br />
+              <span
+                ><a href="https://www.linkedin.com/in/sreekanth-s-663418232"
+                  >linkedin</a
+                ></span
+              ><br />
+              <span
+                ><a href="https://www.twitter.com/_Sreekanth_S_/"
+                  >Twitter</a
+                ></span
+              ><br />
+            </div>
+          </div>
+        </div>
+        <hr />
+      </div>
+      <div class="container">
+        <div class="row">
+          <div class="col-md-8 col-sm-6 col-xs-12">
+            <p class="copyright-text">
+              Copyright &copy; 2023 All Rights Reserved by
+              <a href="https://iamsreekanths.netlify.app/">Sreekanth S</a>.
+            </p>
+          </div>
+
+          <div class="col-md-4 col-sm-6 col-xs-12">
+            <div class="social-icons">
+              <span
+                ><a class="facebook" href="#"
+                  ><i class="fa-brands fa-facebook"></i></a
+              ></span>
+              <span
+                ><a class="twitter" href="#"
+                  ><i class="fa-brands fa-twitter"></i></a
+              ></span>
+              <span
+                ><a class="linkedin" href="#"
+                  ><i class="fa-brands fa-linkedin"></i></a
+              ></span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <script src="./scripts/scripts.js"></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+      crossorigin="anonymous"
+    ></script>
+
+</body>
+</html>
